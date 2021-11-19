@@ -8,8 +8,7 @@
       }
   },
   "rules": {
-      "semi": 2,
-      "autoFixOnSave": true
+      "semi": 2
   }
   
 }

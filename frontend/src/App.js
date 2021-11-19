@@ -1,7 +1,9 @@
 import "./App.css";
 
-import Blog from "./components/Blog"
-
+import Blog from "./components/Blog";
+import post1 from './api/posts/blog-post.1.md';
+import post2 from './api/posts/blog-post.2.md';
+import post3 from './api/posts/blog-post.3.md';
 
 const sections = [
   { title: 45454, url: "api/v1/blogs" },
@@ -55,6 +57,7 @@ function App() {
       featuredPosts={featuredPosts}
       mainFeaturedPost={mainFeaturedPost}
       sections={sections}
+      posts={posts}
      />
   );
 }

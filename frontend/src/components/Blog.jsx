@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
   CssBaseline,
   Grid,
@@ -10,6 +10,7 @@ import { GitHubIcon, FacebookIcon, TwitterIcon } from "@mui/icons-material";
 import Header from "./Header";
 import MainFeaturedPost from "./MainFeaturedPost";
 import FeaturedPost from "./FeaturedPost";
+import Main from './Main';
 
 
 const theme = createTheme();
@@ -21,7 +22,7 @@ const Blog = (props) => {
     featuredPosts,
     sections,
     posts
-} = props
+} = props;
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -40,13 +41,14 @@ const Blog = (props) => {
             spacing={5}
             sx={{ mt:3 }}
             >
+              {posts.map(post =>  console.log(post) )}
               {/* <Main title="From the fire hose" posts={posts} /> */}
             </Grid>
         </main>
       </Container>
     </ThemeProvider>
     </>
-  )
-}
+  );
+};
 
-export default Blog
+export default Blog;
